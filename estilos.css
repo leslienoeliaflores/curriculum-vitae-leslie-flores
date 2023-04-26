@@ -1,0 +1,300 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    /*width: 100%;*/ /* el ancho de la pantalla body sea completo */
+    min-height: 100vh; /* se usa toda la altura de cada dispositvo */
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido {
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-decoration: none;
+}
+
+input {
+    display: none;
+}
+
+label{
+    display: none;
+}
+
+header {
+    /*
+    text-align: center;
+    width: 100%;
+    background: #6E0D58;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    */
+    background: #6E0D58;
+}
+
+nav {
+    
+}
+
+ul {
+    display: flex;
+    /*
+    justify-content: space-between;
+    */
+    justify-content: center;
+    margin-top: 0;
+    padding: 0;
+}
+
+li {
+    display: block;
+    background: #F56EBF;
+    margin: 1rem;
+    padding: 1rem;
+    list-style: none;
+    border-radius: 1rem;
+    border: none;
+}
+
+
+li:hover {
+    filter: brightness(110%);
+}
+
+.button {
+    /*
+    width: 14rem;
+    background: #F56EBF;
+    border-radius: 1rem;
+    margin: 0.8rem;
+    border: none;
+    */
+}
+
+.button-group {
+    /*margin-left: 180px;*/   
+}
+
+.menu {
+    text-align: center;
+    position: absolute;
+    /*width: 1280px;*/
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    background: #6E0D58;
+    /**/
+    display: inline-block;
+    /*margin-left: 50px;*/
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer {
+    width: 100%;
+    background: #6E0D58;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    justify-content: right;
+    margin-top: auto;
+    padding: 1rem;
+}
+
+a {
+    /*position: absolute;*/
+    /*
+    width: 181px;
+    height: 31px;
+    left: 156px;
+    top: 36px;
+    */
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.43rem;
+    /*line-height: 31px;*/
+    /* identical to box height */
+    color: #000000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+h2 {
+    /* Experiencia Laboral */
+    /*position: absolute;
+    width: 660px;
+    height: 92px;
+    left: 556px;
+    top: 99px;
+    */
+    margin-right: 0rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-family: 'Abril Fatface';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #000000;
+}
+
+.p-rectangulo {
+    /* Rectangle 15 */
+    /*  */
+    /*width: 728px;*/
+    /*width: 60%;*/
+    
+    /*height: 504px;*/
+    /*height: 64%;*/
+    /*
+    position: absolute;
+    left: 510px;
+    top: 191px;
+    */
+    width: 61%;
+    background: #F19F9F;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    /*width: 60%;*/
+}
+
+
+
+p {
+    /* Cajera /Almacen familiar */
+    /*position: absolute;*/
+    /*
+    width: 703px;
+    height: 406px;
+    left: 539px;
+    top: 263px;
+    */
+    /*
+    margin-left: 50px;
+    margin-top: 50px;
+    */
+
+    /*
+    margin-left: 2rem;
+    */
+    margin-top: 0.9rem;
+    margin-bottom: 0rem;
+
+    font-family: 'Alike';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.8rem;
+    /*line-height: 40px;*/
+    color: #000000;
+}
+
+
+footer p  {
+    color: white;
+    font-size: 1.4rem;
+    margin: 0.6rem;
+}
+
+.contenedor-imagen {
+    width: 30%;
+    border-radius: 1rem;
+    margin-left: 100px;
+    margin-right: 2rem;
+    display: inline-block;
+    text-align: right;
+}
+
+.contenedor-texto {
+    width: 30%;
+}
+
+div.p-rectangulo > p:first-child {
+    margin-top: 0rem;
+}
+
+.imagen {
+    /*width: 439px;*/
+    /*
+    position: absolute;
+    left: 49px;
+    top: 228px;
+    */
+    width: 240px;
+    height: 50%;
+    /*height: 70%;*/
+
+    border-radius: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+}
+img {
+    max-width: 100%;
+}
+
+@media all and (max-width: 700px){
+
+    li {
+        border-radius: 0rem;
+        border-bottom: 1px solid rgb(7, 10, 3);
+
+    }
+    input:checked ~ ul {
+        display: block;
+    }
+
+    input:checked ~ label{
+        background: ghostwhite;
+    }
+
+    label:hover{
+        background: gray;
+    }
+
+    header {
+        justify-content: left;
+    }
+    
+    li {
+        margin: 0px;
+    }
+
+    label{
+        box-sizing: border-box;
+        display: block;
+        border: 1px solid black;
+        border-radius: 1px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+        background-color: ghostwhite;
+    }
+
+    ul{
+        /*background-color: aliceblue;*/
+        display: none;
+    }
+    
+}
+
+
